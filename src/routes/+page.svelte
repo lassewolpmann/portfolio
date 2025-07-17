@@ -1,19 +1,21 @@
 <script lang="ts">
 </script>
+
 <svelte:head>
 	<title>Lasse Wolpmann</title>
 </svelte:head>
-<article id="about-me" class="prose prose-img:rounded-full prose-img:w-64 prose-img:shadow-2xl flex flex-row items-center justify-between scroll-m-96">
+
+<article id="about-me" class="prose dark:prose-invert prose-img:rounded-full prose-img:w-64 prose-img:shadow-2xl flex flex-row items-center justify-between scroll-m-96">
 	<div>
 		<img src="portrait.jpg" alt="Portrait">
 	</div>
 	<div>
 		<h1>Lasse Wolpmann</h1>
-		<h3>Embedded Software Developer</h3>
+		<h3>Software Developer</h3>
 	</div>
 </article>
 
-<article id="education" class="prose my-10 text-nowrap scroll-m-14">
+<article id="education" class="prose dark:prose-invert my-10 text-nowrap scroll-m-14">
 	<h1>Education</h1>
 
 	<div class="flex flex-row gap-10">
@@ -57,7 +59,7 @@
 	</div>
 </article>
 
-<article id="work" class="prose my-10 text-nowrap scroll-m-14">
+<article id="work" class="prose dark:prose-invert my-10 text-nowrap scroll-m-14">
 	<h1>Work Experience</h1>
 
 	<div class="flex flex-row gap-10">
@@ -113,7 +115,7 @@
 	</div>
 </article>
 
-<article id="projects" class="prose my-10 text-nowrap scroll-m-14">
+<article id="projects" class="prose dark:prose-invert my-10 text-nowrap scroll-m-14">
 	<h1>Projects</h1>
 
 	<section id="formula-countdown-com">
@@ -141,7 +143,7 @@
 	</section>
 </article>
 
-<article id="contact" class="prose my-10 text-nowrap scroll-m-14">
+<article id="contact" class="prose dark:prose-invert my-10 text-nowrap scroll-m-14">
 	<h1>Contact</h1>
 	<p><a href="https://www.linkedin.com/in/lasse-wolpmann/" target="_blank">LinkedIn</a></p>
 	<p><a href="https://github.com/lassewolpmann/" target="_blank">GitHub</a></p>

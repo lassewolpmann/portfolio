@@ -87,7 +87,7 @@
 		<NavBarLink id="work" text="Work Experience" />
 		<NavBarLink id="projects" text="Projects" />
 		<NavBarLink id="contact" text="Contact" />
-		<button class="cursor-pointer bg-gray-200 dark:bg-gray-700 rounded-full w-10 aspect-square" onclick={setTheme}>{theme === "dark" ? "🌑" : "☀️"}</button>
+		<button class="cursor-pointer bg-gray-200 dark:bg-gray-600 rounded-full w-10 aspect-square" onclick={setTheme}>{theme === "light" ? "🌑" : "☀️"}</button>
 	</nav>
 </header>
 <main class="bg-gray-50 dark:bg-gray-950 transition-colors px-8 py-16 flex flex-col gap-32 items-start justify-start">

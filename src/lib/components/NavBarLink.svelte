@@ -4,4 +4,4 @@
 		text: string
 	} = $props();
 </script>
-<a href="#{id}" class="active:text-gray-700 dark:active:text-gray-100 hover:text-gray-500 dark:hover:text-gray-300">{text}</a>
+<a href="#{id}" class="text-nowrap active:text-gray-700 dark:active:text-gray-100 hover:text-gray-500 dark:hover:text-gray-300">{text}</a>

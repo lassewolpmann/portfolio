@@ -53,8 +53,9 @@
 			childEl.classList.remove("active");
 
 			const childY = childEl.getBoundingClientRect().y;
+			const navBarScrollMargin = 128;
 
-			if (childY > 0) {
+			if (childY - navBarScrollMargin > 0) {
 				break;
 			}
 
@@ -141,23 +142,23 @@
 <svelte:window bind:innerWidth={innerWidth}></svelte:window>
 <svelte:body bind:this={bodyEl}></svelte:body>
 
-<header class="fixed w-full flex items-center justify-center">
-	<nav bind:this={navEl} class="bg-gray-100 dark:bg-gray-700 text-gray-400 sm:rounded-full sm:m-4 px-6 py-3 shadow-xl flex flex-col sm:flex-row items-start sm:items-center justify-start gap-5 w-full sm:w-max">
+<header class="fixed w-full flex items-center justify-center text-gray-600 dark:text-gray-400">
+	<nav bind:this={navEl} class="bg-gray-100 dark:bg-gray-900 sm:rounded-full sm:m-4 px-6 py-3 shadow-lg flex flex-col sm:flex-row items-start sm:items-center justify-start gap-5 w-full sm:w-max">
 		<button class:closeMenu={showMenu} class="relative cursor-pointer touch-none w-6 h-6 sm:hidden self-end text-2xl" aria-label="Open/Close Navigation Menu" onclick={() => showMenu = !showMenu}>
 			<span class="bar h-1 rounded-full bg-gray-700 dark:bg-gray-100 block absolute" id="first"></span>
 			<span class="bar h-1 rounded-full bg-gray-700 dark:bg-gray-100 block absolute" id="second"></span>
 			<span class="bar h-1 rounded-full bg-gray-700 dark:bg-gray-100 block absolute" id="third"></span>
 		</button>
-		<div class="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-5" class:hidden={!showMenu && innerWidth < 640}>
+		<div class="flex flex-col sm:flex-row items-start sm:items-center justify-start" class:hidden={!showMenu && innerWidth < 640}>
 			<NavBarLink id="" text="Home" />
 			<NavBarLink id="education" text="Education" />
 			<NavBarLink id="work" text="Work Experience" />
 			<NavBarLink id="projects" text="Projects" />
 			<NavBarLink id="contact" text="Contact" />
-			<button class="cursor-pointer bg-gray-200 dark:bg-gray-600 rounded-full w-10 aspect-square" onclick={setTheme}>{theme === "light" ? "🌑" : "☀️"}</button>
+			<button class="my-5 sm:mx-5 sm:my-0 cursor-pointer bg-gray-200 dark:bg-gray-600 rounded-full w-10 aspect-square" onclick={setTheme}>{theme === "light" ? "🌑" : "☀️"}</button>
 		</div>
 	</nav>
 </header>
-<main class="bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-200 flex items-center justify-center">
+<main class="transition-colors bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-200 flex items-center justify-center">
 	{@render children()}
 </main>

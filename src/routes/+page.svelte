@@ -7,21 +7,23 @@
 	<title>Lasse Wolpmann</title>
 </svelte:head>
 
-<div id="content" class="transition-colors px-8 py-16 sm:py-32 flex flex-col gap-16">
-	<article id="about-me" class="flex flex-row items-center justify-between gap-2 sm:gap-10 w-full">
+<div id="content" class="px-8 flex flex-col gap-16 box-border">
+	<article id="about-me" class="flex flex-row items-center justify-between gap-2 sm:gap-10 w-full min-h-svh">
 		<img src="portrait.jpg" alt="Portrait" class="rounded-full w-24 sm:w-64 shadow-2xl">
 		<div class="text-right">
-			<h1 class="text-2xl sm:text-3xl font-bold">Lasse Wolpmann</h1>
-			<h3 class="text-lg sm:text-2xl">Software Developer</h3>
+			<h1 class="text-2xl sm:text-4xl font-bold">Lasse Wolpmann</h1>
+			<h3 class="text-lg sm:text-2xl font-semibold">Software Developer</h3>
+			<h5 class="text-sm sm:text-lg">Embedded, iOS, Web</h5>
 		</div>
 	</article>
 
-	<article id="education" class="flex flex-col gap-10 w-full">
+	<article id="education" class="flex flex-col gap-10 w-ful min-h-svh scroll-m-16 sm:scroll-m-32">
 		<h1 class="text-2xl sm:text-3xl font-bold">Education</h1>
 
 		<TimeLineEntry
 			name="Turku University of Applied Sciences"
 			description="B. Eng. Information and Communications Technology"
+			subDescription="Embedded Software and IoT"
 			location="Turku, Finland"
 			start="August 2022"
 			end="August 2025"
@@ -46,7 +48,7 @@
 		/>
 	</article>
 
-	<article id="work" class="flex flex-col gap-10 w-full">
+	<article id="work" class="flex flex-col gap-10 w-full min-h-svh scroll-m-16 sm:scroll-m-32">
 		<h1 class="text-2xl sm:text-3xl font-bold">Work Experience</h1>
 
 		<TimeLineEntry
@@ -55,14 +57,38 @@
 			location="Turku, Finland"
 			start="April 2025"
 			end="July 2025"
+			tasks={[
+				"SPI and I2C Communication between ESP32 and BME688",
+				"Reading datasheets and writing custom driver code in C/C++",
+				"Memory management",
+				"Writing a basic HTTP Server in C"
+			]}
 		/>
 
 		<TimeLineEntry
-			name="Runner and Bartender"
+			name="Bartender"
+			description="The Old Irish Pub"
+			location="Turku, Finland"
+			start="May 2023"
+			end="August 2023"
+			tasks={[
+				"Serving guests",
+				"Giving advice on drink choices",
+				"Be the face of the establishment and always stay in a good mood"
+			]}
+		/>
+
+		<TimeLineEntry
+			name="Runner"
 			description="The Old Irish Pub"
 			location="Turku, Finland"
 			start="September 2021"
-			end="August 2023"
+			end="July 2022"
+			tasks={[
+				"Providing equipment to bartenders",
+				"Ensuring a clean bar environment",
+				"Keeping up smooth communication between coworkers"
+			]}
 		/>
 
 		<TimeLineEntry
@@ -71,6 +97,12 @@
 			location="Säkylä, Finland"
 			start="January 2021"
 			end="June 2021"
+			tasks={[
+				"Integrating into a completely new environment",
+				"Respecting authority and sticking to a tight schedule",
+				"Take on leadership roles",
+				"Endure harsh environments"
+			]}
 		/>
 
 		<TimeLineEntry
@@ -79,10 +111,14 @@
 			location="Meldorf, Germany"
 			start="August 2017"
 			end="July 2020"
+			tasks={[
+				"Working in a professional office environment",
+				"Fixing real-life problems"
+			]}
 		/>
 	</article>
 
-	<article id="projects" class="flex flex-col gap-10 w-full">
+	<article id="projects" class="flex flex-col gap-10 w-full min-h-svh scroll-m-16 sm:scroll-m-32">
 		<h1 class="text-2xl sm:text-3xl font-bold">Projects</h1>
 
 		<Project
@@ -119,7 +155,7 @@
 		/>
 	</article>
 
-	<article id="contact" class="flex flex-col gap-2 w-full">
+	<article id="contact" class="flex flex-col gap-2 w-full min-h-svh scroll-m-16 sm:scroll-m-32">
 		<h1 class="text-2xl sm:text-3xl font-bold">Contact</h1>
 		<p><a href="https://www.linkedin.com/in/lasse-wolpmann/" target="_blank" class="underline">LinkedIn</a></p>
 		<p><a href="https://github.com/lassewolpmann/" target="_blank" class="underline">GitHub</a></p>

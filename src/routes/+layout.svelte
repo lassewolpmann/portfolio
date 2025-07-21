@@ -36,18 +36,18 @@
 		if (!bodyEl) return;
 		if (!navEl) return;
 
-		const mainEl = bodyEl.getElementsByTagName("main").item(0);
-		if (!mainEl) return;
+		const contentEl = document.getElementById("content");
+		if (!contentEl) return;
 
-		const mainChildrenCount = mainEl.childElementCount;
-		const mainChildren = mainEl.children;
+		const contentChildrenCount = contentEl.childElementCount;
+		const contentChildren = contentEl.children;
 
 		const navLinkElements = navEl.getElementsByTagName("a");
 
 		let activeIndex = 0;
 
-		for (let i = 0; i < mainChildrenCount; i++) {
-			const childEl = mainChildren.item(i);
+		for (let i = 0; i < contentChildrenCount; i++) {
+			const childEl = contentChildren.item(i);
 			if (!childEl) continue;
 
 			childEl.classList.remove("active");
@@ -158,6 +158,6 @@
 		</div>
 	</nav>
 </header>
-<main class="bg-gray-50 dark:bg-gray-950 transition-colors px-8 py-16 flex flex-col gap-32 items-start justify-start">
+<main class="bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-200 flex items-center justify-center">
 	{@render children()}
 </main>

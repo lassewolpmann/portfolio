@@ -5,6 +5,8 @@
 
 <svelte:head>
 	<title>Lasse Wolpmann</title>
+	<link rel="icon" href="favicon.png" />
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 </svelte:head>
 
 <div id="content" class="px-8 flex flex-col gap-16 box-border">

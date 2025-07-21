@@ -8,12 +8,23 @@
 	let theme: "dark" | "light" = $state("light");
 	let bodyEl: HTMLBodyElement | undefined = $state();
 	let navEl: HTMLElement | undefined = $state();
-	let scrollY: number = $state(0);
 	let innerWidth: number = $state(0);
 
 	let showMenu: boolean = $state(false);
 
+	let lastScrollEvent: number = Date.now();
+
 	onMount(() => {
+		window.addEventListener("scroll", () => {
+			const eventTimestamp = Date.now();
+			if (eventTimestamp - lastScrollEvent < 100) return;	// Throttle event to every 100ms
+
+			lastScrollEvent = eventTimestamp;
+			getActiveNavElement();
+		})
+
+		getActiveNavElement();
+
 		if (!window.matchMedia("(prefers-color-scheme: dark)").matches) return;
 		if (!bodyEl) return;
 
@@ -21,8 +32,7 @@
 		theme = "dark";
 	})
 
-	$effect(() => {
-		if (!scrollY) return;
+	const getActiveNavElement = () => {
 		if (!bodyEl) return;
 		if (!navEl) return;
 
@@ -59,7 +69,7 @@
 		if (!activeLinkEl) return;
 
 		activeLinkEl.classList.add("active");
-	});
+	}
 
 	const setTheme = () => {
 		if (!bodyEl) return;
@@ -128,7 +138,7 @@
   }
 </style>
 
-<svelte:window bind:scrollY={scrollY} bind:innerWidth={innerWidth}></svelte:window>
+<svelte:window bind:innerWidth={innerWidth}></svelte:window>
 <svelte:body bind:this={bodyEl}></svelte:body>
 
 <header class="fixed w-full flex items-center justify-center">

@@ -55,9 +55,9 @@
 			end="July 2025"
 			tasks={[
 				"SPI and I2C Communication between ESP32 and BME688",
-				"Reading datasheets and writing custom driver code in C/C++",
+				"Read datasheets and write custom driver code in C/C++",
 				"Memory management",
-				"Writing a basic HTTP Server in C"
+				"Write a basic HTTP Server in C"
 			]}
 		/>
 
@@ -68,9 +68,9 @@
 			start="May 2023"
 			end="August 2023"
 			tasks={[
-				"Serving guests",
-				"Giving advice on drink choices",
-				"Be the face of the establishment and always stay in a good mood"
+				"Serve guests",
+				"Give advice on drink choices",
+				"Be the face of the establishment"
 			]}
 		/>
 
@@ -81,9 +81,9 @@
 			start="September 2021"
 			end="July 2022"
 			tasks={[
-				"Providing equipment to bartenders",
-				"Ensuring a clean bar environment",
-				"Keeping up smooth communication between coworkers"
+				"Provide equipment to bartenders",
+				"Ensure a clean bar environment",
+				"Keep up smooth communication between coworkers"
 			]}
 		/>
 
@@ -94,8 +94,8 @@
 			start="January 2021"
 			end="June 2021"
 			tasks={[
-				"Integrating into a completely new environment",
-				"Respecting authority and sticking to a tight schedule",
+				"Integrate into a completely new environment",
+				"Respect authority and sticking to a tight schedule",
 				"Take on leadership roles",
 				"Endure harsh environments"
 			]}
@@ -108,8 +108,8 @@
 			start="August 2017"
 			end="July 2020"
 			tasks={[
-				"Working in a professional office environment",
-				"Fixing real-life problems"
+				"Work in a professional office environment",
+				"Fix real-life problems"
 			]}
 		/>
 	</article>

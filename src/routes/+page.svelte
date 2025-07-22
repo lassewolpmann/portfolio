@@ -3,12 +3,6 @@
 	import Project from '$lib/components/Project.svelte';
 </script>
 
-<svelte:head>
-	<title>Lasse Wolpmann</title>
-	<link rel="icon" href="favicon.png" />
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-</svelte:head>
-
 <div id="content" class="px-8 flex flex-col gap-16 box-border">
 	<article id="about-me" class="flex flex-row items-center justify-between gap-2 sm:gap-10 w-full min-h-svh">
 		<img src="portrait.jpg" alt="Portrait" class="rounded-full w-24 sm:w-64 shadow-2xl">

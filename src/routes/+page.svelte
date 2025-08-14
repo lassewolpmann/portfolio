@@ -53,7 +53,7 @@
 		end="July 2025"
 		tasks={[
 			"SPI and I2C Communication between ESP32 and BME688",
-			"Read datasheets and write custom driver code in C/C++",
+			"Read datasheets and write custom driver code in C",
 			"Memory management",
 			"Write a basic HTTP Server in C"
 		]}
@@ -116,7 +116,8 @@
 	<h1 class="text-2xl sm:text-3xl font-bold">Projects</h1>
 
 	<TimeLineEntry
-		name="Tic Tac Toe in C"
+		name="Tic Tac Toe"
+		description="Testing my skills by creating a working version of Tic Tac Toe in C"
 		start="July 2025"
 		end="ongoing"
 		url="https://github.com/lassewolpmann/tic-tac-toe-c"
@@ -125,6 +126,32 @@
 			"Text Input Handling",
 			"CMake Build System",
 			"Working CPU Player (Minimax Algorithm)"
+		]}
+	/>
+
+	<TimeLineEntry
+		name="Better Föli"
+		description="Building an improved iOS native app for navigating Turku with Föli Buses"
+		start="November 2024"
+		end="December 2024"
+		url="https://github.com/lassewolpmann/better-foli"
+		urlDescription="GitHub repository"
+		tasks={[
+			"MapKit",
+			"SwiftData"
+		]}
+	/>
+
+	<TimeLineEntry
+		name="PlaylistSync"
+		description="Creating an easy way to sync playlists from Spotify to Apple Music"
+		start="May 2024"
+		end="June 2024"
+		url="https://github.com/lassewolpmann/PlaylistSync"
+		urlDescription="GitHub repository"
+		tasks={[
+			"OAuth Authorization Flows",
+			"Matching Algorithms"
 		]}
 	/>
 
@@ -142,11 +169,20 @@
 	/>
 
 	<TimeLineEntry
+		name="Geography Game"
+		description="Fun little guessing game for geography nerds"
+		start="September 2023"
+		end="September 2023"
+		url="https://geogame.lassewolpmann.com"
+		urlDescription="Link to game"
+	/>
+
+	<TimeLineEntry
 		name="formulacountdown.com"
 		start="October 2022"
 		end="ongoing"
 		url="https://formulacountdown.com"
-		urlDescription="GitHub repository"
+		urlDescription="Link to website"
 		tasks={[
 			"SvelteKit",
 			"TypeScript",

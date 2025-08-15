@@ -49,7 +49,7 @@
 			childEl.classList.remove("active");
 
 			const childY = childEl.getBoundingClientRect().y;
-			const navBarScrollMargin = 128;
+			const navBarScrollMargin = 140;
 
 			if (childY - navBarScrollMargin > 0) {
 				break;

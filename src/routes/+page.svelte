@@ -11,7 +11,7 @@
 	</div>
 </article>
 
-<article id="education" class="flex flex-col gap-10 w-ful min-h-svh scroll-m-16 sm:scroll-m-32">
+<article id="education" class="flex flex-col gap-10 w-full min-h-svh scroll-m-16 sm:scroll-m-32">
 	<h1 class="text-2xl sm:text-3xl font-bold">Education</h1>
 
 	<TimeLineEntry
@@ -21,8 +21,9 @@
 		location="Turku, Finland"
 		start="August 2022"
 		end="August 2025"
-		url="https://urn.fi/URN:NBN:fi:amk-2025060921697"
-		urlDescription="Link to Thesis"
+		projectLinks={[
+			{ url: "https://urn.fi/URN:NBN:fi:amk-2025060921697", desc: "Link to Thesis" }
+		]}
 	/>
 
 	<TimeLineEntry
@@ -93,7 +94,7 @@
 		end="June 2021"
 		tasks={[
 			"Integrate into a completely new environment",
-			"Respect authority and sticking to a tight schedule",
+			"Respect authority and stick to a tight schedule",
 			"Take on leadership roles",
 			"Endure harsh environments"
 		]}
@@ -120,8 +121,9 @@
 		description="Testing my skills by creating a working version of Tic Tac Toe in C"
 		start="July 2025"
 		end="ongoing"
-		url="https://github.com/lassewolpmann/tic-tac-toe-c"
-		urlDescription="GitHub repository"
+		projectLinks={[
+			{ url: "https://github.com/lassewolpmann/tic-tac-toe-c", desc: "GitHub repository" }
+		]}
 		tasks={[
 			"Text Input Handling",
 			"CMake Build System",
@@ -134,8 +136,9 @@
 		description="Building an improved iOS native app for navigating Turku with Föli Buses"
 		start="November 2024"
 		end="December 2024"
-		url="https://github.com/lassewolpmann/better-foli"
-		urlDescription="GitHub repository"
+		projectLinks={[
+			{ url: "https://github.com/lassewolpmann/better-foli", desc: "GitHub repository" }
+		]}
 		tasks={[
 			"MapKit",
 			"SwiftData"
@@ -147,8 +150,9 @@
 		description="Creating an easy way to sync playlists from Spotify to Apple Music"
 		start="May 2024"
 		end="June 2024"
-		url="https://github.com/lassewolpmann/PlaylistSync"
-		urlDescription="GitHub repository"
+		projectLinks={[
+			{ url: "https://github.com/lassewolpmann/PlaylistSync", desc: "GitHub repository" }
+		]}
 		tasks={[
 			"OAuth Authorization Flows",
 			"Matching Algorithms"
@@ -159,8 +163,10 @@
 		name="Formula Countdown (iOS)"
 		start="November 2023"
 		end="ongoing"
-		url="https://apps.apple.com/de/app/formula-countdown/id6472580786"
-		urlDescription="App Store"
+		projectLinks={[
+			{ url: "https://apps.apple.com/de/app/formula-countdown/id6472580786", desc: "App Store" },
+			{ url: "https://github.com/lassewolpmann-org/f1-countdown-ios", desc: "GitHub repository" }
+		]}
 		tasks={[
 			"Swift",
 			"SwiftUI",
@@ -173,16 +179,20 @@
 		description="Fun little guessing game for geography nerds"
 		start="September 2023"
 		end="September 2023"
-		url="https://geogame.lassewolpmann.com"
-		urlDescription="Link to game"
+		projectLinks={[
+			{ url: "https://geogame.lassewolpmann.com", desc: "Game" },
+			{ url: "https://github.com/lassewolpmann/geography-game", desc: "GitHub repository" }
+		]}
 	/>
 
 	<TimeLineEntry
 		name="formulacountdown.com"
 		start="October 2022"
 		end="ongoing"
-		url="https://formulacountdown.com"
-		urlDescription="Link to website"
+		projectLinks={[
+			{ url: "https://formulacountdown.com", desc: "Website" },
+			{ url: "https://github.com/lassewolpmann-org/f1-countdown-ios", desc: "GitHub repository" }
+		]}
 		tasks={[
 			"SvelteKit",
 			"TypeScript",

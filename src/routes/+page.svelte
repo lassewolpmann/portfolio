@@ -6,8 +6,8 @@
 	<img src="portrait.jpg" alt="Portrait" class="rounded-full w-24 sm:w-64 shadow-2xl">
 	<div class="text-right">
 		<h1 class="text-2xl sm:text-4xl font-bold">Lasse Wolpmann</h1>
-		<h3 class="text-lg sm:text-2xl font-semibold">Software Developer</h3>
-		<h5 class="text-sm sm:text-lg">Embedded, iOS, Web</h5>
+		<h3 class="text-lg sm:text-2xl font-semibold">Systems Administrator</h3>
+		<h4 class="text-base sm:text-xl font-medium">Software Developer (Embedded, iOS, Web)</h4>
 	</div>
 </article>
 
@@ -45,6 +45,14 @@
 
 <article id="work" class="flex flex-col gap-10 w-full min-h-svh scroll-m-16 sm:scroll-m-32">
 	<h1 class="text-2xl sm:text-3xl font-bold">Work Experience</h1>
+
+	<TimeLineEntry
+		name="IT-Administrator"
+		description="Bernhard Kathmann Bauunternehmung GmbH u. Co. KG"
+		location="Bremen, Germany"
+		start="September 2025"
+		end="ongoing"
+	/>
 
 	<TimeLineEntry
 		name="Student Assistant - Smart Brewery"
@@ -120,7 +128,7 @@
 		name="Tic Tac Toe"
 		description="Testing my skills by creating a working version of Tic Tac Toe in C"
 		start="July 2025"
-		end="ongoing"
+		end="August 2025"
 		projectLinks={[
 			{ url: "https://github.com/lassewolpmann/tic-tac-toe-c", desc: "GitHub repository" }
 		]}

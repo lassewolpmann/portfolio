@@ -1,0 +1,18 @@
+services:
+  portfolio:
+    build: .
+    container_name: 'lassewolpmann-portfolio-sveltekit'
+    restart: 'always'
+    labels:
+      traefik.enable: 'true'
+      traefik.http.routers.portfolio.rule: 'Host(`lassewolpmann.com`) || Host(`www.lassewolpmann.com`)'
+      traefik.http.routers.portfolio.entrypoints: 'websecure'
+      traefik.http.routers.portfolio.tls: 'true'
+      traefik.http.routers.portfolio.tls.certresolver: 'hetzner'
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    name: 'traefik'
+    external: 'true'

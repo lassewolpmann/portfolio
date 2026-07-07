@@ -8,11 +8,11 @@ services:
       traefik.http.routers.portfolio.rule: 'Host(`lassewolpmann.com`) || Host(`www.lassewolpmann.com`)'
       traefik.http.routers.portfolio.entrypoints: 'websecure'
       traefik.http.routers.portfolio.tls: 'true'
-      traefik.http.routers.portfolio.tls.certresolver: 'cloudflare'
+      traefik.http.routers.portfolio.tls.certresolver: 'hetzner'
     networks:
-      - traefik
+      - lassewolpmann.com-proxy
 
 networks:
-  traefik:
-    name: 'traefik'
-    external: 'true'
+  lassewolpmann.com-proxy:
+    name: lassewolpmann.com-proxy
+    external: true

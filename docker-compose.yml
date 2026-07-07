@@ -10,9 +10,9 @@ services:
       traefik.http.routers.portfolio.tls: 'true'
       traefik.http.routers.portfolio.tls.certresolver: 'hetzner'
     networks:
-      - lassewolpmann.com-proxy
+      - traefik
 
 networks:
-  lassewolpmann.com-proxy:
-    name: lassewolpmann.com-proxy
+  traefik:
+    name: traefik
     external: true
